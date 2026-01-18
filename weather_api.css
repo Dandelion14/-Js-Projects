@@ -1,0 +1,85 @@
+ body {
+        margin: 0%;
+        padding: 0%;
+        background: linear-gradient(to right, pink, rgb(69, 236, 255));
+        
+    }
+    /* ----------video---------- */
+    #mis{
+        height: 100% ;
+        width: 100%;
+        position: fixed;
+        object-fit: cover;
+    z-index: -1;
+    display: none;
+
+    }
+
+    /* -------------------Top part for input ----------------*/
+    #country {
+        height: 25px;
+        width: 190px;
+        border: 2px solid;
+        border-radius: 7px;
+
+    }
+
+    #btn {
+        height: 25px;
+        width: auto;
+    }
+
+    #input-prt {
+        height: auto;
+        width: auto;
+        justify-self: center;
+    }
+
+    /* ---------weathr show part(0)------------- */
+    /* prt0 */
+    #city-name {
+        height: 500px;
+        width: 750px;
+        background: rgb(0, 0, 0, 0.5);
+        border-radius: 10px;
+        margin-top: 30px;
+        justify-self: center;
+        text-align: center;
+        display: none;
+
+    }
+
+    /* prt1 */
+    #city {
+        font-size: 300%;
+    }
+
+    #city-name-prt1 {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    /* prt2 */
+    #sub-main-container {
+        height: 90%;
+        width: 90%;
+        /* display: flex;
+        flex-wrap: wrap;
+        flex-direction:row;
+        justify-content: space-between; */
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-between;
+        justify-self: center;
+        /* justify-items: center; */
+        /* align-items: center; */
+    }
+
+    .sub-container {
+        height: 150px;
+        width: 200px;
+        background-color: rgb(148, 243, 243,0.5);
+        border-radius: 9px;
+
+    }

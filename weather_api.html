@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./weather_api.css">
+</head>
+
+
+<body>
+    <video src="./mist.mp4" id="mis" autoplay muted></video>
+    <div id="input-prt">
+        <input type="text" id="country"  placeholder="city name">
+        <button id="btn">submit</button>
+    </div>
+    <div id="city-name">
+        <div id="city-name-prt1">
+            <h1 id="city">mark</h1>
+            <h6 id="countrystand"></h6>
+        </div>
+        <div id="sub-main-container">
+            <div class="sub-container">
+                <h3>temprature</h3>
+                <h4 class="temp"></h4>
+            </div>
+            <div class="sub-container">
+                <h3>Wind speed</h3>
+                <h4 class="windspeed"></h4>
+            </div>
+            <div class="sub-container">
+                <h3>Weather</h3>
+                <h4 id="city-weather"></h4>
+            </div>
+
+            <div class="sub-container">
+                <h3>coordinates</h3>
+                <h4 id="city-coordinates"></h4>
+            </div>
+        </div>
+    </div>
+
+    
+
+<script src="./weather_apu.js"></script>
+
+
+</body>
+
+</html>

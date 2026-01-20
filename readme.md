@@ -1,63 +1,76 @@
-🌦️ Weather App (Weather API)
+ ✦ ✦ Gold & Silver Live Price (MCX-Style) ✦ ✦
 
-A simple weather application built using HTML, CSS, and Vanilla JavaScript that fetches real-time weather data from a public Weather API and displays current conditions for any city.
+A simple web project that displays live Gold and Silver prices in an Indian MCX-style format, converted from international spot prices.
 
-🚀 Features
+This project was built for daily reference, especially for users who regularly check gold and silver prices.
 
-Search weather by city name
+Features
 
-Displays:
+Live Gold price (₹ / 10g)
 
-Temperature
+Live Silver price (₹ / 1kg)
 
-Weather condition (cloudy, clear, rain, etc.)
+Prices auto-refresh every 30 seconds
 
-Humidity
+Clean, minimal UI
 
-Wind speed
+Mobile and desktop friendly
 
-Real-time data using API
+MCX-style indicative pricing
 
-Responsive and lightweight
+Data Source
 
-Built with pure JavaScript (no frameworks)
+GoldAPI – International spot prices
 
-🛠️ Technologies Used
+Prices are fetched in INR and converted into MCX-style units
+
+How MCX-Style Price Is Calculated
+
+This project does not use real MCX futures data.
+Instead, it converts spot prices using standard unit conversion and an approximate Indian market premium.
+
+Conversion Logic
+
+Gold
+
+MCX Gold (₹/10g) = (Spot Price ₹/oz ÷ 31.1035) × 10 × 1.10
+
+
+Silver
+
+MCX Silver (₹/kg) = Spot Price ₹/oz × 32.1507 × 1.10
+
+
+The 1.10 factor represents an approximate premium for duties, taxes, and futures pricing.
+
+Important Note
+
+Prices shown are indicative, not official MCX prices
+
+Exact MCX prices require direct exchange data
+
+This project is meant for reference and learning purposes
+
+Tech Stack
 
 HTML
 
 CSS
 
-JavaScript (Vanilla JS)
+Vanilla JavaScript
 
-Weather API (e.g., OpenWeatherMap)
+Fetch API
 
-📂 Project Structure
-weather-app/
-│
-├── index.html
-├── style.css
-├── script.js
-└── README.md
+How to Run
 
-🔑 API Setup
+Clone or download the repository
 
-Go to a weather API provider (e.g., OpenWeatherMap)
+Open the HTML file in a browser
 
-Create a free account
+Make sure you add your GoldAPI key
 
-Generate your API key
+Prices will load automatically
 
-Replace the API key in your JavaScript file:
+Author
 
-const API_KEY = "YOUR_API_KEY_HERE";
-
-⚙️ How It Works
-
-User enters a city name
-
-JavaScript sends a fetch() request to the Weather API
-
-API returns weather data in JSON format
-
-The app extracts required values and updates the UI
+ ✦ ✦ Deepali Panchal ✦ ✦

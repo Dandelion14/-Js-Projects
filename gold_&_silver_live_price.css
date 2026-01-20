@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #ffffff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 360px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    border-radius: 18px;
+    padding: 24px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.price-box {
+    padding: 18px;
+    border-radius: 14px;
+    background: rgba(0, 0, 0, 0.35);
+    margin-bottom: 14px;
+    text-align: center;
+}
+
+.price-box h2 {
+    margin: 0;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: #cbd5f5;
+    text-transform: uppercase;
+}
+
+.price {
+    margin-top: 8px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.gold .price {
+    color: #facc15;
+}
+
+.silver .price {
+    color: #e5e7eb;
+}
+
+.note {
+    text-align: center;
+    font-size: 11px;
+    color: #cbd5f5;
+    margin-top: 6px;
+}
+
+.watermark {
+    text-align: center;
+    margin-top: 12px;
+    font-size: 10px;
+    letter-spacing: 0.4px;
+    color: rgba(255, 255, 255, 0.45);
+}
